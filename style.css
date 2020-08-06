@@ -1,0 +1,116 @@
+/*RESET STYLE*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*GENERAL STYLE*/
+
+.body {
+  font-family: "Manjari", sans-serif;
+  background: radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(
+      45deg,
+      transparent 74px,
+      transparent 75px,
+      #a4a4a4 75px,
+      #a4a4a4 76px,
+      transparent 77px,
+      transparent 109px
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 75px,
+      transparent 76px,
+      #a4a4a4 76px,
+      #a4a4a4 77px,
+      transparent 78px,
+      transparent 109px
+    ),
+    #fff;
+  background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+
+/*PRINCIPAL STYLE*/
+
+/*HEADER*/
+
+.header__title {
+    font-size: 2.9em;
+    text-align: center;
+}
+
+/*PRINCIPAL CONTENT */
+
+.container-principal {
+    width: 90%;
+    max-width: 1000px;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.6em;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 1.6em;
+}
+
+.container__logo,
+.footer {
+    padding: 20px;
+    grid-column: 1/-1;
+    background-color: #1e272e;
+    color: #ffffff;
+}
+
+.main-content {
+    grid-column: span 3;
+    border: 1px solid #000000;
+    padding: 20px;
+}
+
+.main-content__post {
+    background-color: #808e9b;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+.main-content__post__text,
+.main-content__post__title {
+    color: #dfe6e9;
+    padding: 10px;
+}
+
+.sidebar {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2d3436;
+    color: #fff;
+    padding: 40px;
+}
+
+.sidebar__content {
+  margin-bottom: 20px;
+}
+.another-post {
+    background: #2d3436;
+    height: 180px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.another-post:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid black;
+}
+
